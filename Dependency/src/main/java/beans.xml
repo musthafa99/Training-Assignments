@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="class" class="com.cg.Dependency.Mathcheat"></bean>
+<bean id="student" class="com.cg.Dependency.Student1">
+	<property name="mc" ref="class">
+	</property> 
+</bean>
+ <bean id="student1" class="com.cg.Dependency.AnotherStudent">
+	<property name="m" ref="class">
+	</property> 
+</bean>
+</beans>
