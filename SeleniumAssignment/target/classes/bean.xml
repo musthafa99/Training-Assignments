@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="sms" class="com.cg.domain.SmsPack"></bean>
+<bean id="data" class="com.cg.domain.DataPack"></bean>
+<bean id="tune" class="com.cg.domain.CallerTune"></bean>
+<bean id="airtel" class="com.cg.domain.Airtel" >
+	<property name="service" ref="tune"></property>
+</bean>
+
+</beans>
