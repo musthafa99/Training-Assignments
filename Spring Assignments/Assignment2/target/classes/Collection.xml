@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="question" class="com.cg.Collections.Question">
+<property name="questionid"  value="1" ></property>
+<property name="Firstquestions" value="What is Spring?"></property>
+<property name="Firstanswers">
+<list>
+<value>"Spring is an Open Source Application Framework"</value>
+<value>"Spring is an Lightweight Framework"</value> 
+<value>"Spring provides comprehensive infrastructure suppport for developing java based Applications"</value>
+</list>
+</property>
+<property name="Secondquestions" value="What is Java?"></property>
+<property name="Secondanswers">
+<set>
+<value>"Java is an High-Level class-based object-oriented programming Language"</value>
+<value>"Java is an Computing platform for Application Development"</value> 
+<value>"Java is used as server-side language for most back-end developments projects"</value>
+</set>
+</property>
+<property name="Thirdquestions" value="What is MongoDB?"></property>
+<property name="Thirdanswers">
+<map>
+<entry key="1" value ="Mongodb is NoSQL database"/>
+<entry key="2" value ="Mongodb is a tool that can manage document-oriented information to store or retrieve information"/>
+<entry key="3" value ="Mongodb uses non Structured Query Language"/>
+</map>
+</property>
+</bean>
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+<bean id="address" class="com.cg.model.Address">
+<property name="street" value="MuthusamyColony"/>
+<property name="city" value="Coimbatore"/>
+<property name="state" value="Tamilnadu"/>
+<property name="zipcode" value="641026"/>
+<property name="country" value="India"/>
+</bean>  
+<bean id="customer" class="com.cg.model.Customer">
+<property name="customerId" value="101"/>
+<property name="customerName" value="Shadhiya"/>
+<property name="customerContact" value="8056917035"/>
+<property name="customerAddress" ref="address"/>
+</bean> 
+</beans>
+        	
+        
