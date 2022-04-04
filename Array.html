@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Examples</title>
+  
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script type="text/javascript">
+    let cars =["BMW","FORD","TOYATO"];
+
+document.getElementById("demo").innerHTML=cars
+
+var len=cars.length;
+document.getElementById("demo").innerHTML=len;
+var last=cars.pop();
+document.write(cars);
+
+var num=[2,9,25,81]
+var num2=num.map(multiply);
+function multiply(number)
+{
+    return number*5;
+}
+document.getElementById("demo").innerHTML=num2;
+
+var num3=num.filter(multiply);
+function multiply(number)
+{
+    return number>5;
+}
+document.getElementById("demo").innerHTML=num3;
+var num4=[175,80,20];
+var num5=num4.reduce(sum);
+function sum(total,sum)
+{
+    return total-sum;
+}
+document.getElementById("demo").innerHTML=num5;
+</script>
+
+</html>
